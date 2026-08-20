@@ -17,6 +17,9 @@ export const metadata = {
   description:
     "Tech tutorials aur career guidance for students. Learn coding, deploy apps, and plan your career with practical guides.",
   metadataBase: new URL("https://codeaurcareer.com"),
+  verification: {
+    google: "mch8aSpOk2ju51J0T8bOSNVcM19ttjkAezG80FINdOo",
+  },
 };
 
 export default function RootLayout({ children }) {
