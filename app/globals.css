@@ -1,0 +1,31 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-white text-slate-800 antialiased dark:bg-navy-950 dark:text-slate-200;
+  }
+}
+
+@layer components {
+  .gradient-text {
+    @apply bg-gradient-to-r from-violet-400 to-pink-400 bg-clip-text text-transparent;
+  }
+
+  .gradient-btn {
+    @apply rounded-lg bg-gradient-to-r from-violet-500 to-pink-500 px-5 py-2.5 text-sm font-semibold text-white shadow-lg shadow-violet-500/25 transition hover:from-violet-600 hover:to-pink-600;
+  }
+
+  .category-badge {
+    @apply inline-flex items-center rounded-full bg-violet-500/10 px-3 py-1 text-xs font-medium uppercase tracking-wide text-violet-600 dark:bg-violet-500/20 dark:text-violet-300;
+  }
+
+  .article-content {
+    @apply prose prose-slate max-w-none dark:prose-invert prose-headings:scroll-mt-24 prose-headings:font-bold prose-h1:text-3xl prose-h2:mt-10 prose-h2:border-b prose-h2:border-slate-200 prose-h2:pb-2 prose-h2:text-2xl dark:prose-h2:border-slate-700 prose-h3:text-xl prose-a:text-violet-600 prose-a:no-underline hover:prose-a:underline dark:prose-a:text-violet-400 prose-code:rounded prose-code:bg-slate-100 prose-code:px-1.5 prose-code:py-0.5 prose-code:text-sm prose-code:before:content-none prose-code:after:content-none dark:prose-code:bg-navy-800 prose-pre:bg-navy-900 prose-pre:text-slate-100 prose-img:rounded-xl prose-blockquote:border-violet-500 prose-blockquote:text-slate-600 dark:prose-blockquote:text-slate-300;
+  }
+}
